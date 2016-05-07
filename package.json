@@ -1,0 +1,14 @@
+{
+  "name": "jusibe-webtask",
+  "version": "1.0.0",
+  "description": "Send SMS via Auth0 Webtask",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prosper Otemuyiwa <prosperotemuyiwa@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}
