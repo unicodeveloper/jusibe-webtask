@@ -6,7 +6,7 @@ A simple webtask script for sending SMS using the Jusibe SMS API Service
 
 *Go to your browser and put in this URL*
 - [https://webtask.it.auth0.com/api/run/wt-prosperotemuyiwa-gmail_com-0/jusibe?phoneno=xxxxxx&message=xxxxxxx](https://webtask.it.auth0.com/api/run/wt-prosperotemuyiwa-gmail_com-0/hello?phoneno=xxxxxxxx&message=xxxxxxx)
-- Replace phoneno value with a real phone number - Applicable to only Nigerian phone Numbers
+- Replace phoneno value with a real phone number - Applicable to only Nigerian mobile numbers (airtel, etisalat, glo & MTN).
 - Replace message value with a real message
 
 ### Developer Installation
