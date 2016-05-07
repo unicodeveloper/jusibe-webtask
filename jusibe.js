@@ -29,13 +29,16 @@ module.exports = function(context, cb) {
     auth: {
     'user' : context.data.publicKey,
     'password' : context.data.accessToken
-  }},
-  function optionalCallback(err, httpResponse, body) {
+  }}, function (err, response) {
       if (err) {
-          cb('Sending of message failed:', err);
+          return cb(null, 'Sending of message failed:' + err);
       }
 
-      cb(null, 'Awesome...Message sent successfully');
+      if (response.statusCode !== 200) {
+          return cb(null, response.body);
+      }
+
+      cb(null, "Awesome...Message sent successfully");
   });
 
 };
