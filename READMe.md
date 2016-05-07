@@ -1,17 +1,19 @@
+# Webtask Script for Sending SMS
 
-# plate-number
+A simple webtask script for sending SMS using the Jusibe SMS API Service
 
-[![NPM version](https://img.shields.io/npm/v/plate-number.svg?style=flat)](https://www.npmjs.com/package/plate-number)
-![](https://img.shields.io/badge/unicodeveloper-approved-brightgreen.svg)
+## End User Usage
 
-A simple utility library for generating random license plate numbers for Vehicles
+*Go to your browser and put in this URL*
+- [https://webtask.it.auth0.com/api/run/wt-prosperotemuyiwa-gmail_com-0/jusibe?phoneno=xxxxxx&message=xxxxxxx](https://webtask.it.auth0.com/api/run/wt-prosperotemuyiwa-gmail_com-0/hello?phoneno=xxxxxxxx&message=xxxxxxx)
+- Replace phoneno value with a real phone number - Applicable to only Nigerian phone Numbers
+- Replace message value with a real message
 
-### Installation
+### Developer Installation
 
-``` Javascript
-
-npm install plate-number
-
-```
-
+1. Clone this repository: `git clone git@github.com:unicodeveloper/jusibe-webtask.git jusibe-webtask/`
+2. `cd` into the jusibe-webtask folder.
+3. Run `npm install`.
+4. Go to [https://jusibe.com](https://jusibe.com/), register and get your public key and access token.
+5. Run `wt create jusibe.js --secret accessToken=xxxxxxxxx --secret publicKey=xxxxxxxxxxx` . Make sure you have `wt-cli` installed.
 
