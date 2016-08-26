@@ -30,17 +30,16 @@ module.exports = function(context, cb) {
     'user' : context.data.publicKey,
     'password' : context.data.accessToken
   }}, function (err, response) {
-      if (err) {
-          return cb(null, 'Sending of message failed:' + err);
-      }
+        if (err) {
+            return cb(null, 'Sending of message failed:' + err);
+        }
 
-      if (response.statusCode !== 200) {
-          return cb(null, response.body);
-      }
+        if (response.statusCode !== 200) {
+            return cb(null, response.body);
+        }
 
-      cb(null, "Awesome...Message sent successfully");
-  });
-
+        cb(null, "Awesome...Message sent successfully");
+    });
 };
 
 
